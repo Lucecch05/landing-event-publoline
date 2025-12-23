@@ -43,7 +43,8 @@ var x = setInterval(function () {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("reloj").innerHTML = "¡Llegó el gran día!";
+    document.getElementById("reloj").innerHTML = "🎉 ¡Llegó el gran día! 🎉 <br> Te esperamos ";
+    document.getElementById("reloj-cuenta").style.display = 'none';
     $('#reloj').prev('p').html('Listo...');
   }
 }, 1000);
