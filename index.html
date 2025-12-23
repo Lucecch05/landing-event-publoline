@@ -45,6 +45,16 @@
       animation: loadingCircle 1s infinite linear;
     }
 
+    .ubicacion{
+      background-color: blueviolet;
+      -webkit-mask: url('./fiestita_files/icono-ubicacion.svg') no-repeat center;
+      mask: url('./fiestita_files/icono-ubicacion.svg') no-repeat center;
+      mask-size: contain;
+      -webkit-mask-size: contain;
+      width: 120px; /* Define tamaño */
+      height: 120px;
+    }
+
     @-webkit-keyframes loadingCircle {
       100% {
         -webkit-transform: rotate(360deg);
@@ -144,9 +154,11 @@
 
         <!-- Fiesta -->
         <div class="col-md-12 columna">
-          <img src="./fiestita_files/icono-fiesta.svg" alt="" class="circle bounce-in">
+        <div style="display: flex; justify-content: center;">
+          <div class="circle bounce-in ubicacion"></div>
+        </div>
 
-          <h4>Fiesta</h4>
+          <h4>Lugar</h4>
           <p>
             ¡Te esperamos el Viernes 2 de Enero de 19:00hs hasta que salga el sol, para festejar un año más de Vida! <br>
             "Namaste", Raco<br>
@@ -207,7 +219,7 @@
 
     <div class="container">
       <h4>CONFIRMACIÓN DE ASISTENCIA</h4>
-      <p>Cuento con tu presencia. ¡Nos vemos el 02 de Diciembre!</p>
+      <p>Cuento con tu presencia. ¡Nos vemos el 02 de Enero!</p>
       <a target="_blank"
         href="https://api.whatsapp.com/send?phone=543814953778&text=Confirmo%20Asistencia!%20%F0%9F%A5%82"
         class="btn">Confirmar asistencia</a>
